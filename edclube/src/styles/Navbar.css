@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
-  height: 100px;
-  background-color: #121619;
+  height: 80px;
+  background-color: #f0f0f0;
   display: flex;
   flex-direction: row;
 }
@@ -15,7 +15,7 @@
 }
 
 .navbar .leftSide img {
-  width: 70px;
+  width: 120px;
 }
 
 .navbar .rightSide {
@@ -27,10 +27,11 @@
 }
 
 .navbar a {
-  color: white;
+  color: #1a2963;
   text-decoration: none;
   margin: 20px;
 }
+
 
 .navbar .rightSide button {
   background-color: transparent;
