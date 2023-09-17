@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const Servicos = () => {
   return (
     <div className="facility-wrapper">
       <h1 className="primary-subheading">Nossos serviços</h1>
@@ -38,4 +38,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Servicos;
