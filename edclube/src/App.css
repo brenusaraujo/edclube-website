@@ -194,8 +194,11 @@ nav {
   margin-bottom: 2rem;
 }
 
+.about-section-text-container > :first-child {
+  margin-left: 1rem;
+}
+
 .facility-option {
-  border: 2px solid red;
   margin-top: 2rem;
 }
 
