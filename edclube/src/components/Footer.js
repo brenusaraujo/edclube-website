@@ -4,8 +4,9 @@ import { BsWhatsapp, BsInstagram, BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
   const telefone = 5571992402531;
+  const message = `Olá, tudo bem? Gostaria de uma cotação para meu veículo.`;
 
-  const URL_WHATSAPP_SEM_MENSAGEM = `https://api.whatsapp.com/send?phone=${telefone}&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20para%20meu%20ve%C3%ADculo%20`;
+  const URL_WHATSAPP_SEM_MENSAGEM = `https://api.whatsapp.com/send?phone=${telefone}&text=${encodeURIComponent(message)}`;
   const URL_INSTAGRAM = "https://www.instagram.com/edclube.mais/";
   const URL_FACEBOOK = "https://www.facebook.com/edclube/";
   const URL_GOOGLE_MAPS = "https://www.google.com.br/maps/place/Condomínio+Edifício+Catabas+Empresarial/@-12.9812211,-38.4564026,15z/data=!4m6!3m5!1s0x7161b1a59ca0445:0x6c83632e7c80bd6a!8m2!3d-12.9812211!4d-38.4564026!16s%2Fg%2F1vf9ckns?entry=ttu";
