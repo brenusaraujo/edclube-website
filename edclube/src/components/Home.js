@@ -2,6 +2,11 @@ import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { ImWhatsapp } from "react-icons/im"
 import { useState } from "react";
+// import TagManager from 'react-gtm-module'
+// const tagManagerArgs = {
+//   gtmId: 'GTM-PXG4FM9B'
+// }
+// TagManager.initialize(tagManagerArgs)
 
 function calcularAnoDosCarros(intervaloAnos) {
   const anoAtual = new Date().getFullYear();
@@ -46,6 +51,12 @@ const Home = () => {
     const whatsappUrl = `https://wa.me/${telefone}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, '_blank');
+
+    window.dataLayer.push({
+      event: 'click_button_lead_qualificado',
+      email,
+      telefone: telefoneUser
+    });
   };
   const handleWhatsAppButtonClickWithoutMessage = () => {
     const message = `Olá, tudo bem? Gostaria de uma cotação para meu veículo.`;
@@ -53,6 +64,10 @@ const Home = () => {
     const whatsappUrl = `https://wa.me/${telefone}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, '_blank');
+
+    window.dataLayer.push({
+      event: 'click_button_lead',
+    });
   };
   return (
     <div className="home-container">
@@ -104,7 +119,7 @@ const Home = () => {
               </select>
             </div>
             <br />
-            <button onClick={handleWhatsAppButtonClick} className="secondary-button" target="blank">
+            <button onClick={handleWhatsAppButtonClick} className="secondary-button" target="blank" >
               Enviar <FiArrowRight />
             </button>
           </form>
