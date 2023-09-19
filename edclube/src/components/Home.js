@@ -76,6 +76,9 @@ const Home = () => {
           <h1 className="primary-heading">
             O seu clube de benefícios!
           </h1>
+          <p>
+            *Não somos seguradora
+          </p>
           <p className="primary-text">
             PROTEGER SEU VEÍCULO NÃO CUSTA CARO, IMPREVISTOS SIM!
           </p>

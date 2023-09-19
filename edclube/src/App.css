@@ -191,7 +191,7 @@ nav {
 }
 
 .facility-wrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about-section-text-container > :first-child {
@@ -210,6 +210,7 @@ nav {
 
 .contact-page-wrapper h1 {
   max-width: 900px !important;
+  margin-top: 1rem;
 }
 .contact-page-wrapper {
   display: flex;
@@ -217,6 +218,7 @@ nav {
   justify-content: center;
   flex-direction: column;
   background-color: rgba(11, 123, 151, 0.5);
+  margin-bottom: 1rem;
 }
 .contact-form-container {
   background-color: white;
@@ -305,7 +307,7 @@ nav {
   margin-top: 1.5rem;
 }
 .consultants-section-wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: #8ed973;
 }
 .work-section-top p {
@@ -313,7 +315,7 @@ nav {
   max-width: 600px !important;
 }
 .work-section-top h1 {
-  max-width: 700px !important;
+  max-width: 1200px !important;
 }
 .work-section-top {
   display: flex;
@@ -339,7 +341,7 @@ nav {
   margin: 1rem 0rem;
 }
 .work-section-bottom {
-  margin-top: 5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,6 +352,10 @@ nav {
   display: flex;
   align-items: center;
   font-weight: 600;
+}
+
+.work-section-info img {
+  width: 120px;
 }
 
 @media (max-width: 1000px) {

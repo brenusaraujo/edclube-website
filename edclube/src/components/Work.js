@@ -24,8 +24,8 @@ const Work = () => {
   return (
     <div className="consultants-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Nossos Consultores</p>
-        <h1 className="primary-heading">hahdushdsuh</h1>
+        <p className="primary-subheading">Nossos parceiros</p>
+        <h1 className="primary-heading">Confira quem são nosso parceiros</h1>
         <p className="primary-text">
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
           elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
