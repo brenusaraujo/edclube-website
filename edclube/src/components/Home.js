@@ -2,11 +2,7 @@ import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { ImWhatsapp } from "react-icons/im"
 import { useState } from "react";
-// import TagManager from 'react-gtm-module'
-// const tagManagerArgs = {
-//   gtmId: 'GTM-PXG4FM9B'
-// }
-// TagManager.initialize(tagManagerArgs)
+
 
 function calcularAnoDosCarros(intervaloAnos) {
   const anoAtual = new Date().getFullYear();
@@ -53,9 +49,9 @@ const Home = () => {
     window.open(whatsappUrl, '_blank');
 
     window.dataLayer.push({
-      event: 'click_button_lead_qualificado',
-      email,
-      telefone: telefoneUser
+      'event': 'click_button_lead_qualificado',
+      'email': email,
+      
     });
   };
   const handleWhatsAppButtonClickWithoutMessage = () => {
@@ -66,7 +62,7 @@ const Home = () => {
     window.open(whatsappUrl, '_blank');
 
     window.dataLayer.push({
-      event: 'click_button_lead',
+      'event': 'click_button_lead'
     });
   };
   return (
