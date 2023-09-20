@@ -2,6 +2,8 @@ import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { ImWhatsapp } from "react-icons/im"
 import { useState } from "react";
+import Onix from "../Assets/background-1.png"
+import CG160 from "../Assets/cg160.png"
 
 
 function calcularAnoDosCarros(intervaloAnos) {
@@ -51,7 +53,7 @@ const Home = () => {
     window.dataLayer.push({
       'event': 'click_button_lead_qualificado',
       'email': email,
-      
+
     });
   };
   const handleWhatsAppButtonClickWithoutMessage = () => {
@@ -82,28 +84,37 @@ const Home = () => {
             <ImWhatsapp /> Fale conosco
           </button>
         </div>
+
+        <div id="minha-div">
+          <div className="filho">
+            <img src={Onix} alt="Imagem 1" />
+          </div>
+          <div className="filho">
+            <img src={CG160} alt="Imagem 2" />
+          </div>
+        </div>
         <div className="home-form-section">
           <h3 className="home-form-heading">Faça sua cotação agora mesmo!</h3>
           <br />
           <form action="post">
             <div className="form-section">
               <input
-                style={{ width: '450px' }} type="text" id="nome" name="nome" placeholder="Seu nome" value={nome}
+                style={{ width: '300px' }} type="text" id="nome" name="nome" placeholder="Seu nome" value={nome}
                 onChange={handleNomeChange} />
             </div>
 
             <div className="form-section">
-              <input style={{ width: '450px' }} type="email" id="email" name="email" placeholder="Seu email" required value={email}
+              <input style={{ width: '300px' }} type="email" id="email" name="email" placeholder="Seu email" required value={email}
                 onChange={handleEmailChange} />
             </div>
 
             <div className="form-section">
-              <input style={{ width: '450px' }} type="tel" id="phone" name="phone" placeholder="Seu telefone" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" required value={telefoneUser}
+              <input style={{ width: '300px' }} type="tel" id="phone" name="phone" placeholder="Seu telefone" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" required value={telefoneUser}
                 onChange={handleTelefoneChange} />
             </div>
 
             <div className="form-section">
-              <input style={{ width: '450px' }} type="text" id="modeloCarro" name="modeloCarro" placeholder="Modelo do carro" required value={modeloCarro}
+              <input style={{ width: '300px' }} type="text" id="modeloCarro" name="modeloCarro" placeholder="Modelo do carro" required value={modeloCarro}
                 onChange={handleModeloCarroChange} />
             </div>
 
@@ -123,6 +134,7 @@ const Home = () => {
             </button>
           </form>
         </div>
+
       </div>
     </div>
   );

@@ -77,6 +77,33 @@ nav {
   margin: auto;
   background-color: #9fd5ff;
 }
+#minha-div {
+  position: relative; /* Define posição relativa no elemento pai */
+}
+
+#minha-div > :nth-child(1) {
+  position: relative; /* Define posição relativa nos filhos para criar contexto de posicionamento */
+  width: 350px; /* Ajuste o tamanho conforme necessário */
+  height: 200px; /* Ajuste o tamanho conforme necessário */
+  z-index: 1; /* Para garantir que esta imagem fique na frente */
+  transform: translateY(10rem); /* Ajuste a quantidade de pixels para posicionar à direita */
+  overflow: hidden
+
+  
+}
+
+#minha-div > :nth-child(2) {
+  position: absolute; /* Define posição absoluta nas imagens para sobreposição */
+  top: 0;
+  width: 250px; /* Ajuste o tamanho conforme necessário */
+  height: 200px; 
+  transform: translate(-7rem,10rem); /* Ajuste a quantidade de pixels para posicionar à direita */
+  overflow: hidden;
+
+  z-index: 0; /* Para garantir que esta imagem fique na frente */
+
+}
+
 .home-bannerImage-container {
   position: absolute;
   top: -100px;
@@ -85,14 +112,18 @@ nav {
   max-width: 700px;
 }
 .home-form-section {
-  max-width: 500px;
-  margin-left: 30px;
+  max-width: 350px;
+  margin-left: 2rem;
   flex: 1;
   margin: auto;
   font-size: 1.2rem;
   text-align: justify;
+  border: 2px solid red;
 }
 
+.home-form-section button {
+  width: 300px;
+}
 .home-text-section {
   flex: 1;
   display: flex;
