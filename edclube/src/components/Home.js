@@ -2,8 +2,6 @@ import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { ImWhatsapp } from "react-icons/im"
 import { useState } from "react";
-import Onix from "../Assets/background-1.png"
-import CG160 from "../Assets/cg160.png"
 
 
 function calcularAnoDosCarros(intervaloAnos) {
@@ -83,15 +81,6 @@ const Home = () => {
           <button onClick={handleWhatsAppButtonClickWithoutMessage} className="whatsapp-button" target="blank">
             <ImWhatsapp /> Fale conosco
           </button>
-        </div>
-
-        <div id="minha-div">
-          <div className="filho">
-            <img src={Onix} alt="Imagem 1" />
-          </div>
-          <div className="filho">
-            <img src={CG160} alt="Imagem 2" />
-          </div>
         </div>
         <div className="home-form-section">
           <h3 className="home-form-heading">Faça sua cotação agora mesmo!</h3>

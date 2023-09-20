@@ -1,22 +1,22 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
+import Google from "../Assets/google.png";
+import TikTok from "../Assets/tik-tok.png";
+import Meta from "../Assets/meta.png";
 
 const Work = () => {
   const workInfoData = [
     {
-      image: PickMeals,
+      image: Google,
       title: "Consultor 1",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
     },
     {
-      image: ChooseMeals,
+      image: TikTok,
       title: "Consultor 2",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
     },
     {
-      image: DeliveryMeals,
+      image: Meta,
       title: "Consultor 3",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
     },
