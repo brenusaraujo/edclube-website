@@ -26,7 +26,7 @@ const Work = () => {
       <div className="work-section-top">
         <p className="primary-subheading">Nossos parceiros</p>
         <h1 className="primary-heading">Confira quem são nosso parceiros</h1>
-        <p className="primary-text">
+        <p className="primary-text-servico">
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
           elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
         </p>

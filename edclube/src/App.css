@@ -133,6 +133,13 @@ nav {
   border-radius: 15px; /* Define o raio das bordas arredondadas */
   padding: 1rem;
 }
+
+.primary-text-servico{
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  max-width: 500px;
+  color: #6a6a6a;
+  margin: 1.5rem 0rem;
+}
 .secondary-button {
   padding: 1rem 2.5rem;
   background-color: #007e99;
@@ -339,6 +346,7 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
+  margin-left: 1rem;
   /* text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
 }
 .proteja-section-wrapper {
@@ -362,6 +370,7 @@ nav {
   margin: 0;
   text-align: right;
   margin-bottom: 4rem;
+  margin-right: 1rem;
   /* text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
 }
 .proteja-section-wrapper p {
@@ -376,6 +385,7 @@ nav {
   right: 0;
   margin: 0;
   text-align: right;
+  margin-right: 1rem;
   /* text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
 }
 .testimonials-stars-container svg {

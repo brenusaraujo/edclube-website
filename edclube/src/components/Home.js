@@ -21,6 +21,32 @@ const Home = () => {
   const [modeloCarro, setModeloCarro] = useState('');
   const [anoCarro, setAnoCarro] = useState(new Date().getFullYear());
 
+  const formatarTelefone = (input) => {
+    const numeroApenasDigitos = input.replace(/\D/g, '');
+
+    let formatoTelefone = '';
+
+    if (numeroApenasDigitos.length >= 2) {
+      formatoTelefone = `(${numeroApenasDigitos.substring(0, 2)}`;
+    } else {
+      formatoTelefone = numeroApenasDigitos;
+    }
+
+    if (numeroApenasDigitos.length > 2) {
+      formatoTelefone += `) ${numeroApenasDigitos.substring(2, 3)}`;
+    }
+
+    if (numeroApenasDigitos.length > 3) {
+      formatoTelefone += `${numeroApenasDigitos.substring(3, 7)}`;
+    }
+
+    if (numeroApenasDigitos.length > 7) {
+      formatoTelefone += `-${numeroApenasDigitos.substring(7, 11)}`;
+    }
+
+    return formatoTelefone;
+  };
+
   const handleNomeChange = (e) => {
     setNome(e.target.value);
   };
@@ -30,7 +56,8 @@ const Home = () => {
   };
 
   const handleTelefoneChange = (e) => {
-    setTelefoneUser(e.target.value);
+    const novoValor = e.target.value;
+    setTelefoneUser(formatarTelefone(novoValor));
   };
 
   const handleModeloCarroChange = (e) => {
@@ -97,7 +124,7 @@ const Home = () => {
                 onChange={handleEmailChange} />
             </div>
 
-            <div className="form-section">
+            <div className="form-section" id="telefone">
               <input style={{ width: '19rem', height: '2rem', fontSize: '1rem', marginBottom: '1rem' }} type="tel" id="phone" name="phone" placeholder="Seu telefone" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" required value={telefoneUser}
                 onChange={handleTelefoneChange} />
             </div>
