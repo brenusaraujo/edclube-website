@@ -88,22 +88,22 @@ const Home = () => {
           <form action="post">
             <div className="form-section">
               <input
-                style={{ width: '300px' }} type="text" id="nome" name="nome" placeholder="Seu nome" value={nome}
+                style={{ width: '19rem', height: '2rem', fontSize: '1rem', marginBottom: '1rem' }} type="text" id="nome" name="nome" placeholder="Seu nome" value={nome}
                 onChange={handleNomeChange} />
             </div>
 
             <div className="form-section">
-              <input style={{ width: '300px' }} type="email" id="email" name="email" placeholder="Seu email" required value={email}
+              <input style={{ width: '19rem', height: '2rem', fontSize: '1rem', marginBottom: '1rem' }} type="email" id="email" name="email" placeholder="Seu email" required value={email}
                 onChange={handleEmailChange} />
             </div>
 
             <div className="form-section">
-              <input style={{ width: '300px' }} type="tel" id="phone" name="phone" placeholder="Seu telefone" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" required value={telefoneUser}
+              <input style={{ width: '19rem', height: '2rem', fontSize: '1rem', marginBottom: '1rem' }} type="tel" id="phone" name="phone" placeholder="Seu telefone" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" required value={telefoneUser}
                 onChange={handleTelefoneChange} />
             </div>
 
             <div className="form-section">
-              <input style={{ width: '300px' }} type="text" id="modeloCarro" name="modeloCarro" placeholder="Modelo do carro" required value={modeloCarro}
+              <input style={{ width: '19rem', height: '2rem', fontSize: '1rem', marginBottom: '1rem' }} type="text" id="modeloCarro" name="modeloCarro" placeholder="Modelo do carro" required value={modeloCarro}
                 onChange={handleModeloCarroChange} />
             </div>
 

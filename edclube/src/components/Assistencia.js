@@ -1,6 +1,6 @@
 import React from "react";
 
-const Testimonial = () => {
+const Assistencia = () => {
   return (
     <div className="work-section-wrapper">
       <h1>
@@ -10,4 +10,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default Assistencia;
