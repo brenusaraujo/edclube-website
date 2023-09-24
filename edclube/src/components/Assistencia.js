@@ -6,6 +6,8 @@ const Assistencia = () => {
       <h1>
         Com nossa assistência 24 horas, você nunca estará sozinho na estrada!
       </h1>
+      <p>Conte conosco em cada curva da sua jornada.</p>
+
     </div>
   );
 };
